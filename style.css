@@ -1,56 +1,68 @@
 body {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 main {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.container{
-    text-align: center;
-    width: 700px;
+.container {
+  text-align: center;
+  width: 700px;
 }
 
 .main-wrapper {
-    padding: 50px;
-    background: #FFFFFF;
-    box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  padding: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.inline-blocks{
-    display: flex;
-    justify-content: space-between;
+.inline-blocks {
+  display: flex;
+  justify-content: space-between;
 }
 
-.operating-systems{
-    padding: 20px 0;
-    width: 186.67px;
-    height: 200px;
-    background: #FFFFFF;
-    box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.operating-systems {
+  padding: 20px 0;
+  width: 186.67px;
+  height: 200px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.operating-btn{
-    display: flex;
-    justify-content: center;
-    margin: 0 20px 0 20px;
-    height: 38px;
-    background: #F8F8F8;
-    border-radius: 4px;
-    margin-bottom: 13px;
+.operating-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px 0 20px;
+  height: 38px;
+  background: #F8F8F8;
+  border-radius: 4px;
+  margin-bottom: 13px;
+  transition: all 0.1s ease;
+  border: 1px solid #dddddd;
+}
+
+.operating-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+.operating-btn:hover img {
+  fill: #DFC66D;
+  filter: hue-rotate(200deg) saturate(200%) brightness(180%);
 }
 
 .operating-icons {
-    width: 14px;
+  width: 14px;
 }
 
-.info{
-    position: relative;
-    right: -67px;
-    top: -10px;
+.info {
+  position: relative;
+  right: -67px;
+  top: -10px;
 }
 
 
@@ -58,27 +70,34 @@ main {
 
 /* TYPOGRAPHY*/
 
-a, h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Comic Neue', Arial, Helvetica, sans-serif;
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Comic Neue', Arial, Helvetica, sans-serif;
 }
 
-.title{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
 }
 
 .sub-title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 50px;
 }
 
 .operating-title {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 
@@ -90,6 +109,7 @@ a, h1, h2, h3, h4, h5, h6, p {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
 .stepper-item {
   position: relative;
   display: flex;
@@ -156,6 +176,7 @@ a, h1, h2, h3, h4, h5, h6, p {
 .stepper-item:first-child::before {
   content: none;
 }
+
 .stepper-item:last-child::after {
   content: none;
 }
