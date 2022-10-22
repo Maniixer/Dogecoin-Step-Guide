@@ -1,0 +1,161 @@
+body {
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    text-align: center;
+    width: 700px;
+}
+
+.main-wrapper {
+    padding: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.inline-blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.operating-systems{
+    padding: 20px 0;
+    width: 186.67px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.operating-btn{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+    height: 38px;
+    background: #F8F8F8;
+    border-radius: 4px;
+    margin-bottom: 13px;
+}
+
+.operating-icons {
+    width: 14px;
+}
+
+.info{
+    position: relative;
+    right: -67px;
+    top: -10px;
+}
+
+
+
+
+/* TYPOGRAPHY*/
+
+a, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Comic Neue', Arial, Helvetica, sans-serif;
+}
+
+.title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.sub-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+.operating-title {
+    margin: 0 0 20px 0;
+}
+
+
+/* STEP BY STEP GUIDE */
+
+.stepper-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 5px solid #D9D9D9;
+  width: 100%;
+  top: 5px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 5px solid #D9D9D9;
+  width: 100%;
+  top: 5px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 6px;
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+  background-color: #DFC66D;
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 5px solid #DFC66D;
+  width: 100%;
+  top: 5px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
+}
