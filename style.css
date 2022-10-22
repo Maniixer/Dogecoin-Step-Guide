@@ -1,86 +1,90 @@
 body {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 main {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.container{
-    text-align: center;
-    width: 700px;
+.container {
+  text-align: center;
+  width: 700px;
 }
 
 .main-wrapper {
-    padding: 50px;
-    background: #FFFFFF;
-    box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.inline-blocks{
-    display: flex;
-    justify-content: space-between;
+.inline-blocks {
+  display: flex;
+  justify-content: space-between;
 }
 
-.operating-systems{
-    padding: 20px 0;
-    width: 186.67px;
-    height: 200px;
-    background: #FFFFFF;
-    box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.operating-systems {
+  position: relative;
+  padding: 20px 0;
+  width: 186.67px;
+  height: 200px;
+  background: #ffffff;
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.operating-btn{
-    display: flex;
-    justify-content: center;
-    margin: 0 20px 0 20px;
-    height: 38px;
-    background: #F8F8F8;
-    border-radius: 4px;
-    margin-bottom: 13px;
+.operating-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px 0 20px;
+  height: 38px;
+  background: #f8f8f8;
+  border-radius: 4px;
+  margin-bottom: 13px;
 }
 
 .operating-icons {
-    width: 14px;
+  width: 14px;
 }
 
-.info{
-    position: relative;
-    right: -67px;
-    top: -10px;
+.info {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
-
-
-
 
 /* TYPOGRAPHY*/
 
-a, h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Comic Neue', Arial, Helvetica, sans-serif;
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Comic Neue", Arial, Helvetica, sans-serif;
 }
 
-.title{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
 }
 
 .sub-title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 50px;
 }
 
 .operating-title {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
-
 
 /* STEP BY STEP GUIDE */
 
@@ -105,7 +109,7 @@ a, h1, h2, h3, h4, h5, h6, p {
 .stepper-item::before {
   position: absolute;
   content: "";
-  border-bottom: 5px solid #D9D9D9;
+  border-bottom: 5px solid #d9d9d9;
   width: 100%;
   top: 5px;
   left: -50%;
@@ -115,7 +119,7 @@ a, h1, h2, h3, h4, h5, h6, p {
 .stepper-item::after {
   position: absolute;
   content: "";
-  border-bottom: 5px solid #D9D9D9;
+  border-bottom: 5px solid #d9d9d9;
   width: 100%;
   top: 5px;
   left: 50%;
@@ -140,13 +144,13 @@ a, h1, h2, h3, h4, h5, h6, p {
 }
 
 .stepper-item.completed .step-counter {
-  background-color: #DFC66D;
+  background-color: #dfc66d;
 }
 
 .stepper-item.completed::after {
   position: absolute;
   content: "";
-  border-bottom: 5px solid #DFC66D;
+  border-bottom: 5px solid #dfc66d;
   width: 100%;
   top: 5px;
   left: 50%;
