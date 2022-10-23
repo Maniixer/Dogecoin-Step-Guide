@@ -18,7 +18,7 @@
 	SegWit
 */
 
-const walletData = [
+export const walletData = [
   {
     wallet: "Atomic Wallet",
     operatingSystem: ["windows", "linux", "macos", "android", "ios"],
