@@ -93,9 +93,28 @@ main {
   width: 200px;
 }
 
-input {
+.second-wrapper {
+  padding: 20px 0 20px;
+}
+
+/* ==================================================================== RADIO BUTTONS ==================================================================== */
+
+/* HIDE RADIO */
+[type="radio"] {
   position: absolute;
   opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type="radio"] + .operating-btn {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type="radio"]:checked + .operating-btn {
+  outline: 2px solid #dfc66d;
 }
 
 /* ==================================================================== TYPOGRAPHY ==================================================================== */
