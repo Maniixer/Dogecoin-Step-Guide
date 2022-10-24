@@ -1,22 +1,37 @@
 import { walletData } from "./walletData.js";
 
-// Puts all the wallets their operating system arrays in one array.
-function getOperatingSystemArray(wallets) {
-  const operatingsystemArray = [];
+const criteriaCheckbox = document.getElementById("criteria-checkbox");
+
+// Puts all the wallets their criteria in one array.
+function getCriteriaArray(wallets) {
+  const criteriaArray = [];
   for (let wallet of wallets) {
-    for (let operatingsystem of wallet.operatingSystem) {
-      operatingsystemArray.push(operatingsystem);
+    for (let criteria of wallet.criteria) {
+      criteriaArray.push(criteria);
     }
   }
-  console.log(operatingsystemArray);
+  return criteriaArray;
 }
 
-function renderOperatingSystemRadios(wallets) {
-  let radioItems = ``;
-  const operatingSystems = getOperatingSystemArray(wallets);
-  for (let operatingsystem of operatingSystems) {
-    radioItems += `<input type="radio" id="${operatingsystem}" value="${operatingsystem}" name="operatingSystems"`;
+// render out criteria checkbox buttons
+function renderCriteriaCheckbox(wallets) {
+  let checkboxItems = ``;
+  const criterias = getCriteriaArray(wallets);
+  for (let criteria of criterias) {
+    checkboxItems += `<div class="checkbox-row">
+    <label for="${criteria}">${criteria}</label>
+    <input 
+        class="checkbox" 
+        type="checkbox"
+        id="${criteria}"
+        value="${criteria}"
+        name="emotions"
+        >
+</div>`;
   }
+  criteriaCheckbox.innerHTML = checkboxItems;
 }
 
-getOperatingSystemArray(walletData);
+renderCriteriaCheckbox(walletData);
+
+//getOperatingSystemArray(walletData);
