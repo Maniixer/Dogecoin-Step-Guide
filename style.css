@@ -133,6 +133,7 @@ main {
 
 .sidebar-label {
   font-size: 14px;
+  color: #1f1f13;
 }
 
 .sidebar-label-row {
@@ -153,6 +154,9 @@ main {
 .wallet-content {
   width: 100%;
   max-width: 920px;
+  padding: 20px;
+  outline: solid 1px #dddddd;
+  border-radius: 5px;
 }
 
 .wallet-tabel-title {
@@ -174,7 +178,7 @@ main {
 .wallet-table-head:first-child .wallet-table-title {
   text-align: left;
   font-size: 22px;
-  color: #13161f;
+  color: #1f1f13;
   line-height: 36px;
 }
 
@@ -192,7 +196,8 @@ main {
 }
 
 .sidebar-section {
-  padding-bottom: 20px;
+  padding: 20px 0 20px;
+  border-bottom: solid 1px #dddddd;
 }
 
 .margin-left {
@@ -241,14 +246,7 @@ main {
 
 /* ==================================================================== TYPOGRAPHY ==================================================================== */
 
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+* {
   font-family: "Comic Neue", Arial, Helvetica, sans-serif;
 }
 
@@ -271,6 +269,12 @@ p {
   margin: 0 0 20px 0;
 }
 
+label {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f1f13;
+}
 /* ==================================================================== STEP BY STEP GUIDE ==================================================================== */
 
 .stepper-wrapper {
