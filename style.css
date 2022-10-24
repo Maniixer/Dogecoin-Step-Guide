@@ -4,7 +4,8 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -27,7 +28,7 @@ main {
 .operating-systems {
   padding: 20px 0;
   width: 186.67px;
-  height: 200px;
+  height: auto;
   background: #ffffff;
   box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -80,7 +81,7 @@ main {
   position: absolute;
   top: 100%;
   left: 50%;
-  background: #ffffff;
+  background: #f8f8f8;
   box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 10px;
@@ -94,9 +95,118 @@ main {
 }
 
 .second-wrapper {
-  padding: 20px 0 20px;
+  padding: 40px 0 20px;
 }
 
+/* ==================================================================== WALLET TABEL STYLING ==================================================================== */
+
+.wallet-content-container {
+  width: 1230px;
+}
+
+.wallet-tabel {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 9px;
+}
+
+.wallet-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar-filter {
+  width: 320px;
+  padding: 15px;
+  margin-right: 30px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 0%;
+}
+
+.sidebar-label {
+  font-size: 14px;
+}
+
+.sidebar-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.sidebar-os-wrapper {
+  display: flex;
+}
+
+.sidebar-os-row {
+  display: flex;
+}
+
+.wallet-content {
+  width: 100%;
+  max-width: 920px;
+}
+
+.wallet-tabel-title {
+  margin: 0 0 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #13161f;
+  line-height: 36px;
+}
+
+.wallet-table-row {
+  display: table-row;
+}
+
+.wallet-table-head {
+  display: table-cell;
+}
+
+.wallet-table-head:first-child .wallet-table-title {
+  text-align: left;
+  font-size: 22px;
+  color: #13161f;
+  line-height: 36px;
+}
+
+.wallet-table-data {
+  display: table-cell;
+  padding: 20px;
+  border: 1px solid #dadada;
+  border-left: 0;
+  border-right: 0;
+}
+
+.sidebar {
+  padding: 0 12px;
+  margin: 0 5px;
+}
+
+.sidebar-section {
+  padding-bottom: 20px;
+}
+
+.margin-left {
+  margin-left: 20px;
+}
+
+.sidebar-operating-systems {
+  width: 100%;
+}
+
+.sidebar-tooltip {
+  left: 0;
+  top: 0;
+}
 /* ==================================================================== RADIO BUTTONS ==================================================================== */
 
 /* HIDE RADIO */
