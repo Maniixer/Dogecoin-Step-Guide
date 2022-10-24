@@ -28,7 +28,7 @@ function renderCriteriaCheckbox(wallets) {
         type="checkbox"
         id="${criteria}"
         value="${criteria}"
-        name="emotions"
+        name="criteria"
         >
 </div>`;
   }
@@ -38,3 +38,11 @@ function renderCriteriaCheckbox(wallets) {
 renderCriteriaCheckbox(walletData);
 
 //getCriteriaArray(walletData);
+
+/* TOGGLE DISPLAY NONE/BLOCK WHEN CLICKED ON SKIP HELPER BUTTON
+
+const btnSkipHelp = document.getElementById("btn-skip-help-toggle");
+btnSkipHelp.addEventListener("click", function(){
+
+})
+*/
