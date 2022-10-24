@@ -28,16 +28,16 @@ export const walletData = [
   },
   {
     wallet: "BitPay",
-    operatingSystem: ["android", "ios"],
-    userType: ["new"],
-    criteria: ["selfCustodial"],
+    operatingSystem: ["windows", "linux", "macos", "android", "ios"],
+    userType: ["new", "experienced"],
+    criteria: ["control"],
     features: ["2fa"],
   },
   {
     wallet: "Coinbase Wallet app",
     operatingSystem: ["android", "ios"],
     userType: ["experienced"],
-    criteria: ["selfCustodial", "2fa", "browserWallet", "api"],
+    criteria: ["selfCustodial"],
     features: ["2fa", "browserWallet", "api"],
   },
   {
@@ -58,7 +58,7 @@ export const walletData = [
     wallet: "Dogecoin Core",
     operatingSystem: ["windows", "linux", "macos"],
     userType: ["experienced", "new"],
-    criteria: ["selfCustodial"],
+    criteria: ["control", "validation", "transparency", "privacy", "fees"],
     features: [
       "2fa",
       "api",
@@ -67,5 +67,12 @@ export const walletData = [
       "multiSig",
       "openSource",
     ],
+  },
+  {
+    wallet: "Ledger",
+    operatingSystem: ["hardware"],
+    userType: ["experienced"],
+    criteria: ["control", "validation", "environment", "privacy", "fees"],
+    features: ["importWallet", "browserWallet", "openSource"],
   },
 ];

@@ -7,10 +7,13 @@ function getCriteriaArray(wallets) {
   const criteriaArray = [];
   for (let wallet of wallets) {
     for (let criteria of wallet.criteria) {
-      criteriaArray.push(criteria);
+      // if it does (!) NOT have duplicates execute this code.
+      if (!criteriaArray.includes(criteria)) {
+        criteriaArray.push(criteria);
+      }
     }
   }
-  return criteriaArray;
+  return criteriaArray.sort();
 }
 
 // render out criteria checkbox buttons
@@ -34,4 +37,4 @@ function renderCriteriaCheckbox(wallets) {
 
 renderCriteriaCheckbox(walletData);
 
-//getOperatingSystemArray(walletData);
+//getCriteriaArray(walletData);
