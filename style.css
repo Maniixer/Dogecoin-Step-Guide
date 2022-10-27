@@ -239,6 +239,20 @@ main {
   top: 0;
 }
 
+.radio-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.radio-ux {
+  position: inherit !important;
+  opacity: 1 !important;
+  width: 20px;
+  height: 20px;
+}
+
 .checkbox-row {
   display: flex;
   justify-content: space-between;

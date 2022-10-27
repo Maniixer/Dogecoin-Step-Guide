@@ -2,6 +2,44 @@ import { walletData } from "./walletData.js";
 
 const criteriaCheckbox = document.getElementById("criteria-checkbox");
 const featureCheckbox = document.getElementById("feature-checkbox");
+const userTypeRadio = document.getElementById("ux-radio");
+
+// ================================================ USER TYPE ================================================
+
+// Puts all the wallets their user type in one array.
+function getUserTypeArray(wallets) {
+  const userTypeArray = [];
+  for (let wallet of wallets) {
+    for (let userType of wallet.userType) {
+      // if it does (!) NOT have duplicates execute this code.
+      if (!userTypeArray.includes(userType)) {
+        userTypeArray.push(userType);
+      }
+    }
+  }
+  return userTypeArray.sort();
+}
+
+// render out user type radio buttons
+function renderUserTypeRadio(wallets) {
+  let radioItems = ``;
+  const userTypes = getUserTypeArray(wallets);
+  for (let userType of userTypes) {
+    radioItems += `<div class="radio-row">
+    <label for="${userType}">${userType}</label>
+    <input 
+        class="radio-ux" 
+        type="radio"
+        id="${userType}"
+        value="${userType}"
+        name="userType"
+        >
+</div>`;
+  }
+  userTypeRadio.innerHTML = radioItems;
+}
+
+renderUserTypeRadio(walletData);
 
 // ================================================ CRITERIA ================================================
 
