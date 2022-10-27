@@ -10,7 +10,7 @@
   </head>
   <body>
     <main>
-      <div class="container">
+      <div class="container" id="container">
         <h1 class="title">Choose your dogecoin wallet</h1>
         <div class="stepper-wrapper">
           <div class="stepper-item completed">
@@ -175,14 +175,19 @@
               </label>
             </div>
           </div>
-          <div class="help-toggle">
+          <div class="help-toggle" id="help-toggle">
             <button class="btn-skip-help-toggle" id="btn-skip-help-toggle">
-              Skip helper
+              Skip Helper
             </button>
           </div>
         </div>
       </div>
-      <div class="second-wrapper show-wallet">
+      <div class="second-wrapper" id="second-wrapper">
+        <div class="help-toggle" id="help-toggle">
+          <button class="btn-skip-help-toggle" id="btn-use-help-toggle">
+            Use Helper
+          </button>
+        </div>
         <div class="wallet-content-container">
           <div class="wallet-row">
             <div class="sidebar-filter" id="sidebar-filter">
@@ -315,6 +320,10 @@
               <div class="sidebar-section">
                 <h3 class="sidebar-title" id="sidebar-title">Criteria</h3>
                 <div class="criteria-checkbox" id="criteria-checkbox"></div>
+              </div>
+              <div class="sidebar-section">
+                <h3 class="sidebar-title" id="sidebar-title">Features</h3>
+                <div class="feature-checkbox" id="feature-checkbox"></div>
               </div>
             </div>
             <div class="wallet-content">
