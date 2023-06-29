@@ -21,6 +21,7 @@
 export const walletData = [
   {
     wallet: "Atomic Wallet",
+    logo: "/Assets/wallet_menu_windows.svg",
     operatingSystem: ["windows", "linux", "macos", "android", "ios"],
     userType: ["new"],
     criteria: ["selfCustodial"],
@@ -28,6 +29,7 @@ export const walletData = [
   },
   {
     wallet: "BitPay",
+    logo: "/Assets/wallet_menu_windows.svg",
     operatingSystem: ["windows", "linux", "macos", "android", "ios"],
     userType: ["new", "experienced"],
     criteria: ["control"],
@@ -35,6 +37,7 @@ export const walletData = [
   },
   {
     wallet: "Coinbase Wallet app",
+    logo: "/Assets/wallet_menu_windows.svg",
     operatingSystem: ["android", "ios"],
     userType: ["experienced"],
     criteria: ["selfCustodial"],
@@ -42,6 +45,7 @@ export const walletData = [
   },
   {
     wallet: "Doge Wallet",
+    logo: "/Assets/wallet_menu_windows.svg",
     operatingSystem: ["windows", "linux", "macos"],
     userType: ["experienced"],
     criteria: ["selfCustodial"],
@@ -49,6 +53,7 @@ export const walletData = [
   },
   {
     wallet: "DogeChain",
+    logo: "/Assets/wallet_menu_windows.svg",
     operatingSystem: ["windows", "linux", "macos"],
     userType: ["experienced"],
     criteria: ["selfCustodial"],
@@ -56,6 +61,7 @@ export const walletData = [
   },
   {
     wallet: "Dogecoin Core",
+    logo: "/Assets/wallet_menu_windows.svg",
     operatingSystem: ["windows", "linux", "macos"],
     userType: ["experienced", "new"],
     criteria: ["control", "validation", "transparency", "privacy", "fees"],
@@ -70,6 +76,7 @@ export const walletData = [
   },
   {
     wallet: "Ledger",
+    logo: "/Assets/wallet_menu_windows.svg",
     operatingSystem: ["hardware"],
     userType: ["experienced"],
     criteria: ["control", "validation", "environment", "privacy", "fees"],

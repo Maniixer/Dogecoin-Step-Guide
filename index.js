@@ -41,6 +41,14 @@ function renderUserTypeRadio(wallets) {
 
 renderUserTypeRadio(walletData);
 
+//sort wallets on user type filter
+
+const wallets = walletData.filter(function (wallet) {
+  return wallet.userType.includes("linux");
+});
+
+console.log(wallets);
+
 // ================================================ CRITERIA ================================================
 
 // Puts all the wallets their criteria in one array.
@@ -122,16 +130,16 @@ const btnSkipHelp = document.getElementById("btn-skip-help-toggle");
 
 btnSkipHelp.addEventListener("click", function () {
   const hideGuide = document.getElementsByClassName("container");
-  const showTabel = document.getElementsByClassName("second-wrapper");
+  const showTable = document.getElementsByClassName("second-wrapper");
 
   for (let container of hideGuide) {
     container.classList.remove("visible");
     container.classList.add("hidden");
   }
 
-  for (let tabel of showTabel) {
-    tabel.classList.remove("hidden");
-    tabel.classList.add("visible");
+  for (let table of showTable) {
+    table.classList.remove("hidden");
+    table.classList.add("visible");
   }
 });
 
@@ -139,15 +147,15 @@ const btnUseHelp = document.getElementById("btn-use-help-toggle");
 
 btnUseHelp.addEventListener("click", function () {
   const hideGuide = document.getElementsByClassName("container");
-  const showTabel = document.getElementsByClassName("second-wrapper");
+  const showTable = document.getElementsByClassName("second-wrapper");
 
   for (let container of hideGuide) {
     container.classList.remove("hidden");
     container.classList.add("visible");
   }
 
-  for (let tabel of showTabel) {
-    tabel.classList.remove("visible");
-    tabel.classList.add("hidden");
+  for (let table of showTable) {
+    table.classList.remove("visible");
+    table.classList.add("hidden");
   }
 });
